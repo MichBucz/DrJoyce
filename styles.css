@@ -160,6 +160,11 @@ button {
   width: 50px;
   background-color: rgb(241 111 112);
 }
+.arrow:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transform: scale(1.1);
+}
 
 .arrow svg {
   color: white;
@@ -210,7 +215,7 @@ button {
 .subscribe-form input {
   height: 35px;
   width: 320px;
-  padding: 0;
+  padding-left: 10px;
   text-align: left;
   font-family: "Roboto", sans-serif;
   border: none;
@@ -318,30 +323,61 @@ button {
   height: 13px;
 }
 
-/* .featured-section{
+.featured-section {
+  font-family: "Roboto", sans-serif;
   height: 360px;
-  width: 100%;
+  width: 90%;
   padding: 50px;
-  display: flex;
+  display: inline-block;
   justify-content: center;
+  text-align: center;
 }
 
-.featured-section h1{
+.featured-section h1 {
   justify-content: center;
+  margin-bottom: 60px;
 }
 
-.featured-logos{
-  display: inline-flex;
+.row img {
+  margin: 20px 30px;
 }
 
-.featured-logos img{
- height: 30px;
-} */
+#logo1,
+#logo3 {
+  height: 30px;
+  width: auto;
+}
+
+#logo2,
+#logo8,
+#logo9 {
+  height: 35px;
+  width: auto;
+}
+
+#logo4,
+#logo5 {
+  height: 40px;
+  width: auto;
+}
+
+#logo6,
+#logo7 {
+  height: 20px;
+  width: auto;
+}
+
+#logo10 {
+  height: 50px;
+  width: auto;
+}
 
 .join-section {
   display: flex;
-  height: 360px;
+  height: 400px;
   width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(239 239 239);
 }
 
 .join-content {
@@ -349,6 +385,10 @@ button {
   display: flex;
   justify-content: center;
   width: 70%;
+}
+
+.join-content h1 {
+  font-weight: 200;
 }
 
 .join-section-form {
@@ -361,7 +401,7 @@ button {
 .join-section-form input {
   height: 35px;
   width: 470px;
-  padding: 0;
+  padding-left: 10px;
   text-align: left;
   font-family: "Roboto", sans-serif;
   border: none;
@@ -393,7 +433,7 @@ button {
   gap: 20px;
   list-style: none;
   display: flex;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: -40px;
   gap: 15px;
   list-style: none;
@@ -405,10 +445,17 @@ button {
   gap: 20px;
 }
 
-.join-section-form p {
-  font-size: 10px;
+.join-content p {
+  margin-left: -5px;
+  margin-top: 60px;
+}
+
+.join-links {
+  margin-top: 40px;
 }
 
 .join-links li {
+  margin: 8px 0;
   list-style: none;
+  font-size: 14px;
 }
