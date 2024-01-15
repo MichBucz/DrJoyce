@@ -267,7 +267,7 @@ button {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 360px;
+  height: 370px;
 }
 
 .blog-card {
@@ -281,8 +281,8 @@ button {
 
 .blog-card:hover {
   transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-  transform: scale(1.05);
+  transition-timing-function: ease-in-out, ease-in-out;
+  transform: translateY(-15px);
 }
 
 .blog-card img {
@@ -344,23 +344,58 @@ button {
   width: 100%;
 }
 
-.join-content{
+.join-content {
+  margin: 20px auto;
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 70%;
 }
 
-.join-section form{
+.join-section-form {
   display: flex;
+  justify-content: space-around;
+  height: 35px;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+}
+
+.join-section-form input {
+  height: 35px;
+  width: 470px;
+  padding: 0;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+
+.join-btn {
+  display: flex;
+  height: 35px;
+  width: 50px;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+}
+.join-btn:hover {
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transform: scale(1.05);
 }
 
 .join-btn svg {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
+  color: white;
 }
 
 .join-icons {
+  justify-content: left;
   gap: 20px;
+  list-style: none;
+  display: flex;
+  margin-top: 30px;
+  margin-left: -40px;
+  gap: 15px;
   list-style: none;
 }
 .join-icons li {
@@ -370,6 +405,10 @@ button {
   gap: 20px;
 }
 
-.join-links li{
+.join-section-form p {
+  font-size: 10px;
+}
+
+.join-links li {
   list-style: none;
 }
