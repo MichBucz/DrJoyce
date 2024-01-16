@@ -253,6 +253,7 @@ button {
   background-color: rgb(254 254 254);
   padding: 20px;
   height: 450px;
+  overflow: hidden;
 }
 
 .blog-card-btn {
