@@ -1,4 +1,5 @@
 html {
+  overflow: auto;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -6,40 +7,45 @@ html {
   display: flex;
 }
 
+body {
+  border-image-repeat: stretch;
+}
+
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .header {
   width: 100%;
   display: inline-flex;
   align-items: center;
-  padding: 10px 0;
-  margin-top: -20px;
+  padding: 1rem 0;
+  margin-top: -2rem;
 }
 
 nav img {
-  width: 180px;
+  width: 11.25rem;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  margin-left: 100px;
+  margin-left: 25.25rem;
 }
 
 nav ul li {
   display: flex;
 }
+
 .header-links {
-  margin-left: 550px;
+  margin-left: 8.75rem;
 }
 
 .header-links a {
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 1rem;
   font-size: 0.7rem;
   font-weight: bold;
   color: rgb(136 136 136);
@@ -50,7 +56,7 @@ nav ul li {
   transition-timing-function: ease;
   transform: scale(1.2);
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 1rem;
   font-size: 0.7rem;
   font-weight: bold;
   color: rgb(36 36 36);
@@ -61,26 +67,26 @@ button {
 }
 
 .header-buttons {
-  margin-left: -90px;
+  margin-left: -23.875rem;
   border: 0;
-  padding: 3px 6px;
+  padding: 0.1875rem 0.375rem;
 }
 
 .header-buttons a {
   display: flex;
   text-decoration: none;
   align-items: center;
-  padding: 7px 15px;
+  padding: 0.4375rem 0.9375rem;
   border: 0;
   outline: 0;
   color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 .btn1 {
-  margin: 0 5px 0 5px;
+  margin: 0 0.3125rem 0 0.3125rem;
   background-color: black;
   border: none;
 }
@@ -92,7 +98,7 @@ button {
 }
 
 .btn2 {
-  margin: 0 5px 0 5px;
+  margin: 0 0.3125rem 0 0.3125rem;
   background-color: rgb(241 111 112);
   border: none;
 }
@@ -108,67 +114,68 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 
 .text-content {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .text-content h1 {
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 10px 0 10px -20px;
+  margin: 0.625rem 0 0.625rem -1.25rem;
   text-align: left;
 }
 
 .text-content h2 {
   font-size: 3rem;
-  margin: -10px 0;
-  margin-left: -50px;
+  margin: -0.625rem 0;
+  margin-left: -3.125rem;
 }
 
-.founder-section-hr{
-  margin: 15px 0 10px -20px;
+.founder-section-hr {
+  margin: 0.9375rem 0 0.625rem -1.25rem;
 }
 
 .text-content p {
   font-size: 1rem;
-  margin: 10px 10px;
+  margin: 0.625rem 0.625rem;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  
 }
 
 .text-content img {
-  height: 25px;
-  width: 25px;
-  margin: 5px;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  margin: 0.3125rem;
 }
 
 .image-content img {
   max-width: 100%;
-  height: 270px;
+  height: 16.875rem;
   position: relative;
   object-fit: contain;
 }
+
 .social-media {
   align-items: center;
   align-content: center;
-  margin-left: -30px;
+  margin-left: -1.875rem;
 }
 
 .arrow {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -407px;
-  height: 50px;
-  width: 50px;
+  margin-top: -25.4375rem;
+  height: 3.125rem;
+  width: 3.125rem;
   background-color: rgb(241 111 112);
 }
+
 .arrow:hover {
   transition-duration: 0.5s;
   transition-timing-function: ease;
@@ -177,13 +184,13 @@ button {
 
 .arrow svg {
   color: white;
-  height: 20px;
+  height: 1.25rem;
 }
 
 .form-section {
   width: 100%;
-  height: 350px;
-  padding-top: 30px;
+  height: 21.875rem;
+  padding-top: 1.875rem;
   background-color: rgb(239 239 239);
   text-align: center;
   align-items: center;
@@ -196,7 +203,7 @@ button {
 }
 
 .form-content h1 {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
 }
@@ -204,12 +211,12 @@ button {
 .form-content h1 b {
   color: rgb(255, 255, 255);
   background-color: black;
-  padding: 1px 6px;
+  padding: 0.0625rem 0.375rem;
 }
 
 .form-content h2 {
-  margin-top: -5px;
-  font-size: 40px;
+  margin-top: -0.3125rem;
+  font-size: 2.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
@@ -217,14 +224,14 @@ button {
 .subscribe-form {
   display: inline-block;
   justify-content: space-around;
-  height: 35px;
-  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+  height: 2.1875rem;
+  box-shadow: 0px 0px 0.562 5rem rgba(0, 0, 0, 0.1);
 }
 
 .subscribe-form input {
-  height: 35px;
-  width: 320px;
-  padding-left: 10px;
+  height: 2.1875rem;
+  width: 20rem;
+  padding-left: 0.625rem;
   text-align: left;
   font-family: "Roboto", sans-serif;
   border: none;
@@ -235,10 +242,10 @@ button {
   background-color: rgb(241 111 112);
   color: white;
   font-weight: 500;
-  height: 37px;
+  height: 2.3125rem;
   border: none;
-  padding: 0 5px;
-  margin-left: -5px;
+  padding: 0 0.3125rem;
+  margin-left: -0.3125rem;
 }
 
 .subscribe-form button:hover {
@@ -249,21 +256,19 @@ button {
 
 .trending-section {
   text-align: center;
-  padding: 50px 0;
+  padding: 3.125rem 0;
   background-color: rgb(254 254 254);
-  padding: 20px;
-  height: 450px;
   overflow: hidden;
 }
 
 .blog-card-btn {
-  margin-left: 300px;
+  margin-left: 18.75rem;
 }
 
 .trending-section-header {
   display: inline-flex;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .trending-section-header h2 {
@@ -272,32 +277,32 @@ button {
 
 .trending-section-header svg {
   color: rgb(0, 0, 0);
-  height: 20px;
+  height: 1.25rem;
 }
 
 .blog-container {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 370px;
+  height: 23.125rem;
 }
 
 .blog-card {
-  width: 264.57px;
+  width: 16.5714rem;
   text-align: center;
   display: grid;
   background-color: rgb(255 255 255);
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
-  height: 340px;
+  box-shadow: 0px 0px 0.375rem 0px rgba(0, 0, 0, 0.15);
+  height: 21.25rem;
 }
 
 .blog-card:hover {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out, ease-in-out;
-  transform: translateY(-15px);
+  transform: translateY(-1.25rem);
 }
 
 .blog-card img {
@@ -306,38 +311,37 @@ button {
 }
 
 .blog-card h1 {
-  margin-top: 20px;
-  padding: 5px;
-  font-size: 18px;
+  margin-top: 1.25rem;
+  padding: 0.3125rem;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
 .blog-card h2 {
-  font-size: 13px;
-  padding: 5px;
+  font-size: 0.8125rem;
+  padding: 0.3125rem;
   font-weight: 300;
-  margin-top: -10px;
+  margin-top: -0.625rem;
 }
 
 .blog-card p {
   display: inline;
   height: 95%;
   color: rgb(241 111 112);
-  margin: 10px 0;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 800;
   align-items: center;
 }
 
 .blog-card p svg {
-  height: 13px;
+  height: 0.8125rem;
 }
 
 .featured-section {
   font-family: "Roboto", sans-serif;
-  height: 360px;
+  height: 21.25rem;
   width: 90%;
-  padding: 50px;
+  padding: 3.125rem;
   display: inline-block;
   justify-content: center;
   text-align: center;
@@ -345,73 +349,73 @@ button {
 
 .featured-section h1 {
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .row img {
-  margin: 20px 30px;
+  margin: 1.25rem 1.875rem;
 }
 
 #logo1,
 #logo3 {
-  height: 30px;
+  height: 1.875rem;
   width: auto;
 }
 
 #logo2,
 #logo8,
 #logo9 {
-  height: 35px;
+  height: 2.1875rem;
   width: auto;
 }
 
 #logo4,
 #logo5 {
-  height: 40px;
+  height: 2.5rem;
   width: auto;
 }
 
 #logo6,
 #logo7 {
-  height: 20px;
+  height: 1.25rem;
   width: auto;
 }
 
 #logo10 {
-  height: 50px;
+  height: 3.125rem;
   width: auto;
 }
 
 .join-section {
   display: flex;
-  height: 400px;
+  height: 25rem;
   width: 100%;
   font-family: "Roboto", sans-serif;
   background-color: rgb(239 239 239);
 }
 
 .join-content {
-  margin: 20px auto;
+  margin: 1.25rem auto;
   display: flex;
   justify-content: center;
   width: 70%;
 }
 
 .join-content h1 {
-  font-weight: 200;
+  font-weight: 1.25rem;
 }
 
 .join-section-form {
   display: flex;
   justify-content: space-around;
-  height: 35px;
-  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+  height: 2.1875rem;
+  box-shadow: 0px 0px 0.5625rem rgba(0, 0, 0, 0.1);
 }
 
 .join-section-form input {
-  height: 35px;
-  width: 470px;
-  padding-left: 10px;
+  height: 2.1875rem;
+  width: 20rem;
+  padding-left: 0.625rem;
   text-align: left;
   font-family: "Roboto", sans-serif;
   border: none;
@@ -419,13 +423,14 @@ button {
 
 .join-btn {
   display: flex;
-  height: 35px;
-  width: 50px;
+  height: 2.1875rem;
+  width: 3.125rem;
   background-color: black;
   align-items: center;
   justify-content: center;
   border-style: none;
 }
+
 .join-btn:hover {
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -433,39 +438,49 @@ button {
 }
 
 .join-btn svg {
-  height: 20px;
-  width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
   color: white;
 }
 
 .join-icons {
   justify-content: left;
-  gap: 20px;
+  gap: 1.25rem;
   list-style: none;
   display: flex;
-  margin-top: 40px;
-  margin-left: -40px;
-  gap: 15px;
+  margin-top: 2.5rem;
+  margin-left: -2.5rem;
+  gap: 1.25rem;
   list-style: none;
 }
+
 .join-icons li {
   display: inline-block;
-  height: 30px;
-  width: 30px;
-  gap: 20px;
+  height: 1.875 rem;
+  width: 1.875rem;
+  gap: 1.25rem;
 }
 
 .join-content p {
-  margin-left: -5px;
-  margin-top: 60px;
+  margin-left: -0.3125rem;
+  margin-top: 3.75rem;
 }
 
 .join-links {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .join-links li {
-  margin: 8px 0;
+  margin: 0.5rem 0 0 1rem;
   list-style: none;
-  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+
+@media only screen and (max-width: 767px) {
+ .container {
+  height: 90%;
+  width: 90%;
+
+  }
 }
