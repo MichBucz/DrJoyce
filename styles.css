@@ -1,49 +1,20 @@
-html {
-  overflow: auto;
+* {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
-  display: flex;
 }
 
-body {
-  border-image-repeat: stretch;
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-  width: 100%;
-  height: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
-.header {
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
-  padding: 1rem 0;
-  margin-top: -2rem;
-}
-
-nav img {
-  width: 11.25rem;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  margin-left: 25.25rem;
-}
-
-nav ul li {
-  display: flex;
-}
-
-.header-links {
-  margin-left: 8.75rem;
-}
-
-.header-links a {
+.navbar {
   text-decoration: none;
   padding: 0 1rem;
   font-size: 0.7rem;
@@ -51,25 +22,30 @@ nav ul li {
   color: rgb(136 136 136);
 }
 
-.header-links a:hover {
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transform: scale(1.2);
+.nav-link {
   text-decoration: none;
   padding: 0 1rem;
   font-size: 0.7rem;
   font-weight: bold;
-  color: rgb(36 36 36);
+  color: rgb(136 136 136);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.nav-link:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transform: scale(1.2);
 }
 
-button {
-  cursor: pointer;
+.navbar-brand img {
+  height: 2rem;
 }
 
 .header-buttons {
-  margin-left: -23.875rem;
+  list-style: none;
   border: 0;
   padding: 0.1875rem 0.375rem;
+  margin: 0;
 }
 
 .header-buttons a {
@@ -85,31 +61,26 @@ button {
   font-size: 0.625rem;
 }
 
-.btn1 {
-  margin: 0 0.3125rem 0 0.3125rem;
-  background-color: black;
-  border: none;
-}
-
-.btn1:hover {
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transform: scale(1.1);
-}
-
+.btn1,
 .btn2 {
   margin: 0 0.3125rem 0 0.3125rem;
   background-color: rgb(241 111 112);
   border: none;
-}
-
-.btn2:hover {
   transition-duration: 0.3s;
   transition-timing-function: ease;
+}
+.btn1 {
+  background-color: black;
+}
+
+.btn1:hover,
+.btn2:hover {
   transform: scale(1.1);
 }
 
 .founder-section {
+  margin-left: 2rem;
+  font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,7 +102,8 @@ button {
 .text-content h2 {
   font-size: 3rem;
   margin: -0.625rem 0;
-  margin-left: -3.125rem;
+  margin-left: -1.5rem;
+  font-weight: bold;
 }
 
 .founder-section-hr {
@@ -170,15 +142,15 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -25.4375rem;
+  margin-top: -23.4375rem;
   height: 3.125rem;
   width: 3.125rem;
   background-color: rgb(241 111 112);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 
 .arrow:hover {
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
   transform: scale(1.1);
 }
 
@@ -203,20 +175,20 @@ button {
 }
 
 .form-content h1 {
-  font-size: 1.5625rem;
-  font-weight: 900;
+  font-weight: 600;
+  font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
 }
 
 .form-content h1 b {
   color: rgb(255, 255, 255);
   background-color: black;
-  padding: 0.0625rem 0.375rem;
+  padding: 0.06rem 0.3rem;
 }
 
 .form-content h2 {
-  margin-top: -0.3125rem;
-  font-size: 2.5rem;
+  margin: 2rem 0;
+  font-size: 2rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
@@ -246,11 +218,11 @@ button {
   border: none;
   padding: 0 0.3125rem;
   margin-left: -0.3125rem;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .subscribe-form button:hover {
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
   transform: scale(1.05);
 }
 
@@ -273,6 +245,7 @@ button {
 
 .trending-section-header h2 {
   position: absolute;
+  font-size: 1.5rem;
 }
 
 .trending-section-header svg {
@@ -286,7 +259,6 @@ button {
   gap: 1.25rem;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   height: 23.125rem;
 }
 
@@ -297,11 +269,12 @@ button {
   background-color: rgb(255 255 255);
   box-shadow: 0px 0px 0.375rem 0px rgba(0, 0, 0, 0.15);
   height: 21.25rem;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transform: translateY(0);
 }
 
 .blog-card:hover {
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out, ease-in-out;
   transform: translateY(-1.25rem);
 }
 
@@ -339,21 +312,27 @@ button {
 
 .featured-section {
   font-family: "Roboto", sans-serif;
-  height: 21.25rem;
+  height: 25.25rem;
   width: 90%;
   padding: 3.125rem;
   display: inline-block;
   justify-content: center;
   text-align: center;
+  margin: 0 3rem;
 }
 
 .featured-section h1 {
+  font-size: 1.5rem;
   justify-content: center;
   margin-bottom: 3.75rem;
 }
 
-.row img {
-  margin: 1.25rem 1.875rem;
+.rows {
+  display: inline-flex;
+}
+
+#row img {
+  margin: 20px 30px;
 }
 
 #logo1,
@@ -388,25 +367,25 @@ button {
 
 .join-section {
   display: flex;
-  height: 25rem;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   background-color: rgb(239 239 239);
 }
 
 .join-content {
-  margin: 1.25rem auto;
+  margin: 3rem auto;
   display: flex;
   justify-content: center;
   width: 70%;
 }
 
 .join-content h1 {
-  font-weight: 1.25rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .join-section-form {
-  display: flex;
+  display: inline-flex;
   justify-content: space-around;
   height: 2.1875rem;
   box-shadow: 0px 0px 0.5625rem rgba(0, 0, 0, 0.1);
@@ -414,7 +393,7 @@ button {
 
 .join-section-form input {
   height: 2.1875rem;
-  width: 20rem;
+  width: 25rem;
   padding-left: 0.625rem;
   text-align: left;
   font-family: "Roboto", sans-serif;
@@ -448,22 +427,30 @@ button {
   gap: 1.25rem;
   list-style: none;
   display: flex;
-  margin-top: 2.5rem;
-  margin-left: -2.5rem;
+  margin-top: 2rem;
+  margin-left: -2rem;
   gap: 1.25rem;
   list-style: none;
 }
 
 .join-icons li {
   display: inline-block;
-  height: 1.875 rem;
-  width: 1.875rem;
+  height: 1.875rem;
+  gap: 1.25rem;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transform: translateY(0);
+}
+
+.join-icons li:hover {
+  transform: translateY(-0.25rem);
+  display: inline-block;
+  height: 1.875rem;
   gap: 1.25rem;
 }
 
 .join-content p {
-  margin-left: -0.3125rem;
-  margin-top: 3.75rem;
+  margin-top: 2rem;
 }
 
 .join-links {
@@ -471,16 +458,74 @@ button {
 }
 
 .join-links li {
-  margin: 0.5rem 0 0 1rem;
+  margin-top: 0.5rem;
   list-style: none;
   font-size: 0.875rem;
 }
 
+@media only screen and (width<= 1200px) {
+  .rows {
+    display: block;
+  }
+  .featured-section {
+    height: 100%;
+  }
+}
 
-@media only screen and (max-width: 767px) {
- .container {
-  height: 90%;
-  width: 90%;
+@media only screen and (width<= 992px) {
+  .founder-section {
+    margin: 2rem;
+    padding: 2rem;
+    display: grid;
+  }
+  .nav-link:hover {
+    transform: scale(1);
+  }
+}
 
+@media only screen and (width <= 700px) {
+  .founder-section h1 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .founder-section h2 {
+    font-size: 2rem;
+  }
+  .form-section h1 {
+    font-size: 1rem;
+  }
+
+  .form-section h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #e-mail,
+  .form-content button {
+    height: 2rem;
+    width: -webkit-fill-available;
+    margin: 5px auto;
+  }
+
+  .blog-card h1 {
+    font-size: 0.8rem;
+  }
+
+  .blog-card p {
+    font-size: 0.7rem;
+  }
+
+  .trending-section-header h2 {
+    font-size: 1.5rem;
+  }
+  .join-content {
+    display: block;
+    text-align: center;
+  }
+  .join-icons {
+    justify-content: center;
   }
 }
